@@ -69,18 +69,10 @@ Then I should see prop pro41 "entertainthisstoryfb"
 Given I share an entertain this post to twitter
 When I trigger the Omniture Debugger
 Then I should see prop pro41 "entertainthisstorytwitter"
-Given I share an entertain this post to linkedin
-When I trigger the Omniture Debugger
-Then I should see prop pro41 "entertainthisstorylinkedin"
 Given I share an entertain this post via email
 When I trigger the Omniture Debugger
 Then I should see prop pro41 "entertainthisstoryemail"
-Given I share an entertain this post to googleplus
-When I trigger the Omniture Debugger
-Then I should see prop pro41 "entertainthisstorygoogleplus"
-Given I share an entertain this post to pinterest
-When I trigger the Omniture Debugger
-Then I should see prop pro41 "entertainthisstorypinterest"
+
 
 Scenario: Prop41: Top Five in right rail
 
