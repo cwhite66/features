@@ -6,7 +6,7 @@ Then I should see debug data
 Then prop "eVar4 " is "D=pageName"
 Then prop prop02 is "entertainthis"
 Then prop prop08 is "www.usatoday.com"
-Then prop prop11 is	"yes" or "no" (default is "no")
+Then prop prop11 is "yes" or "no" (default is "no")
 Then prop prop12 is	"2:30 PM", "4:00 AM". "10:30 PM", etc
 Then prop prop13 is	"tuesday", "wednesday", "thursday", etc
 Then prop prop16 is	"blogs"
