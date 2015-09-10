@@ -60,3 +60,48 @@ Then prop "channel" is "life"
 Then prop "events" is "event3"
 Then prop "hier1" is "life:entertainthis"
 Then prop "hier4" is "life"
+
+Scenario: Prop41: Entertain This sharing
+
+Given I share an entertain this post to facebook
+When I trigger the Omniture Debugger
+Then I should see prop pro41 "entertainthisstoryfb"
+Given I share an entertain this post to twitter
+When I trigger the Omniture Debugger
+Then I should see prop pro41 "entertainthisstorytwitter"
+Given I share an entertain this post to linkedin
+When I trigger the Omniture Debugger
+Then I should see prop pro41 "entertainthisstorylinkedin"
+Given I share an entertain this post via email
+When I trigger the Omniture Debugger
+Then I should see prop pro41 "entertainthisstoryemail"
+Given I share an entertain this post to googleplus
+When I trigger the Omniture Debugger
+Then I should see prop pro41 "entertainthisstorygoogleplus"
+Given I share an entertain this post to pinterest
+When I trigger the Omniture Debugger
+Then I should see prop pro41 "entertainthisstorypinterest"
+
+Scenario: Prop41: Top Five in right rail
+
+Given I click on an article in the top five right rail module
+When I trigger the Omniture Debugger
+Then I should see prop pro41 "entertainthismostread"
+
+Scenario: Prop41: Top Key Words
+
+Given I click on any top keyword on the entertain this section front
+When I trigger the Omniture Debugger
+Then I should see prop pro41 "entertainthiskeywordtop1", entertainthiskeywordtop2" etc
+Given I click on any top keyword on a entertain this post page
+When I trigger the Omniture Debugger
+Then I should see prop pro41 "entertainthiskeywordtop1", entertainthiskeywordtop2" etc
+
+Scenario: Prop41: Bottom Key Words
+
+Given I click on any top keyword on the entertain this section front
+When I trigger the Omniture Debugger
+Then I should see prop pro41 "entertainthiskeywordbottom1", entertainthiskeywordbottom2" etc
+Given I click on any top keyword on a entertain this post page
+When I trigger the Omniture Debugger
+Then I should see prop pro41 "entertainthiskeywordbottom1", entertainthiskeywordbottom2" etc
